@@ -3,10 +3,14 @@ import java.util.Scanner;
 
 public class Problem2 {
 
-    public static void avg(int[] arr){
+    public static double avg(int[] arr){
+        double sum = 0;
 
+        for (int i : arr) {
+            sum += i;
+        }
 
-
+        return sum/arr.length;
     }
 
     public static void main(String[] args) {
@@ -17,5 +21,9 @@ public class Problem2 {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
+
+        System.out.println(avg(arr));
     }
+
+
 }

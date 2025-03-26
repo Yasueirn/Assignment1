@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Problem1 {
 
     public static void min(int[] arr) {
         int min = arr[0];
